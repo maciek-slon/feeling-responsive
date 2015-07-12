@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.meta_title %}{{ page.meta_title }} &lt; {% elsif page.title %}{{ page.title }} &lt; {% endif %}{{ site.title }}</title>
 	<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles_feeling_responsive.css">
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
 	
   <script>
     WebFontConfig = {
-      google: { families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ] }
+      google: { families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin', 'Alegreya::latin' ] }
     };
 
     (function() {
@@ -24,7 +24,7 @@
   </script>
 
   <noscript>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7cVolkhov' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7cVolkhov%7cAlegreya' rel='stylesheet' type='text/css'>
   </noscript>
 
   {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
